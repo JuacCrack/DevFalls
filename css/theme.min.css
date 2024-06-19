@@ -4,6 +4,54 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+/* Tamaño pequeño (sm) */
+@media (min-width: 300px) and (max-width: 599px) {
+  .order-sm-0 {
+    order: 0;
+  }
+  .order-sm-1 {
+    order: 1;
+  }
+  .order-sm-2 {
+    order: 2;
+  }
+  .order-sm-3 {
+    order: 3;
+  }
+}
+
+/* Tamaño medio (md) */
+@media (min-width: 600px) and (max-width: 991px) {
+  .order-md-0 {
+    order: 0;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+  .order-md-2 {
+    order: 2;
+  }
+  .order-md-3 {
+    order: 3;
+  }
+}
+
+/* Tamaño grande (lg) */
+@media (min-width: 992px) {
+  .order-lg-0 {
+    order: 0;
+  }
+  .order-lg-1 {
+    order: 1;
+  }
+  .order-lg-2 {
+    order: 2;
+  }
+  .order-lg-3 {
+    order: 3;
+  }
+}
+
 figure {
   display: block;
   margin-block-start: 0 !important;
