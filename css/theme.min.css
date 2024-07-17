@@ -20,6 +20,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .btn {
+    display: block;
+    margin-bottom: 10px; /* Ajusta este valor según el margen deseado */
+  }
+}
+
 /* Tamaño medio (md) */
 @media (min-width: 600px) and (max-width: 991px) {
   .order-md-0 {
