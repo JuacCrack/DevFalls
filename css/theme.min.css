@@ -51,7 +51,7 @@
 
 .span-devfalls {
   color: black;
-  font-size: 5rem;
+  font-size: 5rem; /* Tamaño por defecto */
   font-weight: bolder;
   margin-left: 1.5rem;
 }
@@ -70,12 +70,19 @@
   .order-sm-3 {
     order: 3;
   }
+  .svg-icon {
+    width: 50px; /* Tamaño del .SVG-icon para pantallas pequeñas */
+    height: 50px; /* Tamaño del .SVG-icon para pantallas pequeñas */
+  }
+  .span-devfalls {
+    font-size: 2rem; /* Tamaño de la letra para pantallas pequeñas */
+  }
 }
 
 @media (max-width: 768px) {
   .btn {
     display: block;
-    margin-bottom: 10px; /* Ajusta este valor según el margen deseado */
+    margin-bottom: 10px; 
   }
 }
 
@@ -93,6 +100,13 @@
   .order-md-3 {
     order: 3;
   }
+  .svg-icon {
+    width: 75px; /* Tamaño del .SVG-icon para pantallas medianas */
+    height: 75px; /* Tamaño del .SVG-icon para pantallas medianas */
+  }
+  .span-devfalls {
+    font-size: 3.5rem; /* Tamaño de la letra para pantallas medianas */
+  }
 }
 
 /* Tamaño grande (lg) */
@@ -108,6 +122,13 @@
   }
   .order-lg-3 {
     order: 3;
+  }
+  .svg-icon {
+    width: 100px; /* Tamaño del .SVG-icon para pantallas grandes */
+    height: 100px; /* Tamaño del .SVG-icon para pantallas grandes */
+  }
+  .span-devfalls {
+    font-size: 5rem; /* Tamaño de la letra para pantallas grandes */
   }
 }
 
