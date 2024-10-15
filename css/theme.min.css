@@ -4,6 +4,58 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+@keyframes invertColors {
+  100% {
+    filter: invert(1);
+  }
+}
+
+.section-preloader.invert-animation {
+  animation: invertColors 2000ms ease-in-out forwards;
+}
+
+.section-preloader.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-preloader {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999999999999999999999999;
+  opacity: 1;
+}
+
+.span-devfalls {
+  color: black;
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-left: 1.5rem;
+}
+
 /* Tamaño pequeño (sm) */
 @media (min-width: 300px) and (max-width: 599px) {
   .order-sm-0 {
@@ -215,6 +267,7 @@ img {
   }
 }
 body {
+  overflow: hidden;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
